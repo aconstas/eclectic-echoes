@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    background-color: lightslategray;
+    height: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link:hover {
+    color: #FFFCC8;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;400;500&display=swap');
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+
+.text {
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+}
