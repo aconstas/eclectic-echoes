@@ -7,7 +7,7 @@ export default function Product({ product }) {
         <h2 className={styles.title}>{product.title}</h2>
         <div className={styles.price}>
           <p>{product.price}</p>
-          <p>{product.rating.rate}</p>
+          <p>{product.rating.rate}/10</p>
         </div>
         <img src={product.image} />
       </div>
