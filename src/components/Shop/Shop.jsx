@@ -6,6 +6,7 @@ export default function Shop() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +23,13 @@ export default function Shop() {
     fetchData();
   }, []);
 
-  if (loading) return <h1>one sec...</h1>;
+  function addToCart(event, product, quantity) {
+    event.preventDefault();
+    setCart([...cart, {product, quantity}]);
+    console.log(cart);
+  }
+
+  if (loading) return <h1 id="loadingPage">one sec...</h1>;
   if (error)
     return (
       <h1>
@@ -35,7 +42,7 @@ export default function Shop() {
       <h1 id={styles.title}>the shop</h1>
       <div id={styles.productContainer}>
         {products.map((product) => (
-          <Product key={product.id} product={product} />
+          <Product key={product.id} product={product} addToCart={addToCart}/>
         ))}
       </div>
     </>
