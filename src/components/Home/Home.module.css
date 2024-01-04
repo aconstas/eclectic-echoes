@@ -33,3 +33,9 @@
     border-radius: 6px;
     box-shadow: 2px 2px 5px black;
 }
+
+@media (max-width: 1000px) {
+    .photo {
+        width: 90%;
+    }
+}
