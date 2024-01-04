@@ -3,7 +3,7 @@ import styles from "./Product.module.css";
 
 export default function Product({ product, addToCart }) {
   
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
 
   function handleQuantityChange(event) {
