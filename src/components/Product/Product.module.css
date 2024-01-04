@@ -23,17 +23,41 @@
 
 .prodImage {
     max-height: 50%;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 input {
-    /* margin-top: 5%;
-    margin-bottom: 5%; */
     border-radius: 4px;
     border: 1px solid black;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
-    /* margin: 0 auto; */
+    transform: translateX(-50%);
+    width: 75px;
+}
+
+.addCart {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background-color: #FFD300;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: 'Arvo', sans-serif;
+}
+
+.added {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background-color: #01982c;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: 'Arvo', sans-serif;
+}
+
+.addCart:hover {
+    cursor: pointer;
+    background-color: #66C4FF;
 }
