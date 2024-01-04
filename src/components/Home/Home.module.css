@@ -4,6 +4,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 4rem;
+    text-align: center;
+    
 }
 
 .heading {
@@ -11,6 +13,7 @@
     font-weight: 400;
     text-align: center;
     font-size: 30px;
+    margin-top: 30px;
 }
 
 .text {
@@ -18,6 +21,15 @@
     font-weight: 700;
     max-width: 500px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     font-size: 16px;
+}
+
+.photo {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    border: 5px solid white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px black;
 }
