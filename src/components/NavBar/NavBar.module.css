@@ -16,3 +16,7 @@
 .link:hover {
     color: #FFFCC8;
 }
+
+img:hover {
+    cursor: pointer;
+}
