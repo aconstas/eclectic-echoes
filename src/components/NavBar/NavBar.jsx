@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import cartIcon from "../../../public/cart-icon.png";
+import cartIcon from "../../../src/assets/cart-icon.png";
 import { useState } from "react";
-import Cart from "../Cart/Cart";
+import Cart from '../Cart/Cart.jsx';
 
-export default function NavBar() {
+export default function NavBar({cart}) {
   const [showCart, setShowCart] = useState(false);
 
   function handleCartClick() {
-    setShowCart(!showCart);
+    setShowCart((showCart) => !showCart);
+  }
+
+  function totalItems (cart) {
+    let total = 0;
+    cart.forEach((item) => total += Number(item.quantity));
+    return total;
   }
 
   return (
@@ -20,7 +26,10 @@ export default function NavBar() {
         <Link to="/shop" className={styles.link}>
           SHOP
         </Link>
-        <img src={cartIcon} alt="cart icon" onClick={handleCartClick} />
+        <div id={styles.cartSection}>
+          <img src={cartIcon} alt="cart icon" onClick={handleCartClick} />
+          <h2>{totalItems(cart)}</h2>
+        </div>
       </header>
       {showCart && <Cart />}
     </>
