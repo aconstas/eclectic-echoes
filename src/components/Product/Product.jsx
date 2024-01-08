@@ -18,16 +18,17 @@ export default function Product({ product, addToCart }) {
           <p>${product.price}</p>
           <p>{product.rating.rate}/5</p>
         </div>
-        <img src={product.image} className={styles.prodImage} />
+        <img src={product.image} className={styles.prodImage} loading="lazy"/>
         <br />
         <form>
-          <input type="number" placeholder="quantity" onChange={handleQuantityChange}></input>
+          <input type="number" min="0" placeholder="quantity" onChange={handleQuantityChange}></input>
           <button
             className={isAdded ? styles.added : styles.addCart}
             onClick={(event) => {
               setIsAdded(true);
               addToCart(event, product, quantity)
-            }}
+            }
+          }
           >
             {isAdded ? "Added!" : "Add to cart"}
           </button>
