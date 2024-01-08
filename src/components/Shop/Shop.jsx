@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import Product from "../Product/Product";
 import styles from "./Shop.module.css";
 
-export default function Shop() {
+export default function Shop({addToCart}) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,13 +22,7 @@ export default function Shop() {
     fetchData();
   }, []);
 
-  function addToCart(event, product, quantity) {
-    event.preventDefault();
-    setCart([...cart, {product, quantity}]);
-    console.log(cart);
-  }
-
-  if (loading) return <h1 id="loadingPage">one sec...</h1>;
+  if (loading) return <h1 id={styles.loadingPage}>one sec...</h1>;
   if (error)
     return (
       <h1>
