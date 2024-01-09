@@ -19,6 +19,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+table {
+  margin: 0 auto;
+}
+
 th {
     font-family: 'Poppins', sans-serif;
 }
