@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;400;500&display=swap');
 
+#homeContainer {
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
 #title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -31,7 +36,7 @@
     width: 500px;
     border: 5px solid white;
     border-radius: 6px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 5px 5px 0px black;
 }
 
 @media (max-width: 1000px) {
