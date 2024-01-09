@@ -1,4 +1,4 @@
-import styles from "./cart.module.css";
+import styles from "./Cart.module.css";
 
 export default function Cart({ cart }) {
   const cartTotalPrice = (cart) => {
