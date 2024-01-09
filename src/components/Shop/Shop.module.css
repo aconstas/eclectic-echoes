@@ -8,6 +8,7 @@
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 20px;
     margin-bottom: 25px;
+    min-height: 100vh;
 }
 
 #productContainer > * {
@@ -16,4 +17,5 @@
 
 #loadingPage {
     text-align: center;
+    min-height: 100vh;
 }
