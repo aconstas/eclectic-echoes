@@ -1,16 +1,18 @@
 .navbar {
     display: flex;
     background-color: lightslategray;
-    height: 50px;
+    height: 60px;
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .link {
     color: white;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 .link:hover {
@@ -26,4 +28,9 @@ img:hover {
     flex-direction: row;
     flex: 0;
     align-items: center;
+    color: white;
+}
+
+#totalItems {
+    margin-left: 5px;
 }
