@@ -20,7 +20,7 @@ export default function NavBar({ cart }) {
   return (
     <>
       <header className={styles.navbar}>
-        <Link to="/home" className={styles.link}>
+        <Link to="/" className={styles.link}>
           HOME
         </Link>
         <Link to="/shop" className={styles.link}>
