@@ -5,7 +5,7 @@ import guy from '../../assets/guy.webp';
 
 export default function Home() {
     return (
-        <>
+        <div id={styles.homeContainer}>
             <h1 id={styles.title}>Eclectic Echoes</h1>
             <h2 className={styles.heading}>Where Trend Meets Unique!</h2>
             <img src={group} className={styles.photo} alt="Group of people laughing" loading='lazy'/>
@@ -18,6 +18,6 @@ export default function Home() {
             <h2 className={styles.heading}>Not Just Products, But Experiences</h2>
             <img src={guy} className={styles.photo} alt="Model in Zion National Park" loading='lazy'/>
             <p className={styles.text}>Every item at Eclectic Echoes comes with a story, a journey. We don't just sell products; we deliver experiences that resonate with your individualistic spirit. Our blog features stories behind our products, tips on trendsetting, and much more. Connect with us and be part of an experience that redefines shopping.</p>
-        </>
+        </div>
     );
 }
