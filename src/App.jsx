@@ -36,7 +36,7 @@ export default function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/home",
+      path: "/",
       element: (
         <Layout cart={cart}>
           <Home />
