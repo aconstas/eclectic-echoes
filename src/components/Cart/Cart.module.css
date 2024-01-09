@@ -1,6 +1,69 @@
 #cartContainer {
-    position: absolute;
-    right: 0;
-    background-color: white;
-    z-index: 1;
+  position: absolute;
+  width: 75%;
+  max-width: 500px;
+  right: 5px;
+  background-color: white;
+  z-index: 1;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+#cartProducts {
+  list-style: none;
+  max-width: ;
+}
+
+#title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+th {
+    font-family: 'Poppins', sans-serif;
+}
+
+td {
+  text-align: center;
+  font-family: "Arvo", serif;
+}
+
+#grandTotalContainer {
+    text-align: center;
+}
+
+#grandTotal {
+    text-align: center;
+    font-family: 'Arvo', serif;
+    padding: 2px 4px;
+    border: 2px solid black;
+    border-width: 100%;
+    margin: 15px auto 20px auto;
+    display: inline-block;
+}
+
+#neuButton {
+  background-color: #c70039; 
+  margin: 0 auto 10px auto;
+  display: block;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 5px 5px 0px 0px black;
+  transition: transform 0.1s ease;
+
+  &:hover {
+    background-color: #AF0035;
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px 0px black;
+  }
+
+  &:active, &:focus {
+    outline: 2px solid #FFD300;
+    outline-offset: 2px;
+  }
 }
